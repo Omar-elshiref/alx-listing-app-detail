@@ -105,7 +105,8 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       occupants: "4-6"
     },
     image: "/assets/image 2.png",
-    discount: ""
+    discount: "",
+    description: "Experience the ultimate luxury in this stunning villa with breathtaking ocean views, a private pool, and top-notch amenities. Perfect for a relaxing getaway.",
   },
 
 
