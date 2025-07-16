@@ -90,6 +90,7 @@ export const ACCOMMODATIONTYPES  = [
 
 export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
   {
+    id: 1,
     name: "Villa Ocean Breeze",
     address: {
       state: "Seminyak",
@@ -104,14 +105,53 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-6"
     },
-    image: "/assets/image 2.png",
+    image: ["/assets/image2.png", "/assets/image3.png", "/assets/image4.png", "/assets/image5.png"],
     discount: "",
-    description: "Experience the ultimate luxury in this stunning villa with breathtaking ocean views, a private pool, and top-notch amenities. Perfect for a relaxing getaway.",
+    description: "Feel like exploring the Dominican? Start the day with a hike on one of Playa Morons many trails. Weave your way around the gated community to find secluded sandy coves for swimming and paddleboarding. When you Feel like exploring the Dominican? Start the day with a hike on one of Playa Morons many trails. Weave your way around the gated community to find secluded sandy coves for swimming and paddleboarding. When youre ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in the hot tub, and gazing out over incredible ocean views.",
+    placeOffer: {
+      icon: ["/assets/mountain1.svg", "/assets/chef1.svg", "/assets/broom1.svg", "/assets/pool1.svg", "/assets/pan1.svg", "/assets/sunrise1.svg", "/assets/bell1.svg", "/assets/shaker1.svg", "/assets/hot-tub1.svg", "/assets/wifi1.svg"],
+      text: ["Mountain view", "Chef", "Cleaning available during stay", "Pool - infinity", "Kitchen", "Shared beach access", "Butler", "Bartender", "Hot Tub", "WiFi"]
+    },
+    reviews: [  
+      {
+        avatar: "/assets/image25.png",
+        name: "Kerry",
+        data: "March 2024",
+        years: 3,
+        rating: 5,
+        comment: "I simply dont have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking",
+      },
+      {
+        avatar: "/assets/image25-1.png",
+        name: "Cindy & Ben",
+        data: "August 2023",
+        years: 1,
+        rating: 5,
+        comment: "I simply dont have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking",
+      },
+      {
+        avatar: "/assets/image25-2.png",
+        name: "Pooja",
+        data: "March 2024",
+        years: 1,
+        rating: 5,
+        comment: "I simply dont have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking",
+      },
+      {
+        avatar: "/assets/image25-3.png",
+        name: "Marnie",
+        data: "January 2023",
+        years: 5,
+        rating: 5,
+        comment: "I simply dont have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking",
+      },
+    ]
   },
 
 
 
   {
+    id: 2,
     name: "Mountain Escape Chalet",
     address: {
       state: "Aspen",
@@ -126,10 +166,11 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "5-7"
     },
-    image: "/assets/image 2.png",
+    image: ["/assets/image2.png", "/assets/image3.png", "/assets/image4.png", "/assets/image5.png"],
     discount: "30"
   },
   {
+    id: 3,
     name: "Cozy Desert Retreat",
     address: {
       state: "Palm Springs",
@@ -144,10 +185,11 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "1",
       occupants: "2-3"
     },
-    image: "/assets/image 2.png",
+    image: ["/assets/image2.png", "/assets/image3.png", "/assets/image4.png", "/assets/image5.png"],
     discount: ""
   },
   {
+    id: 4,
     name: "City Lights Penthouse",
     address: {
       state: "New York",
@@ -162,10 +204,11 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "2-4"
     },
-    image: "/assets/image 2.png",
+    image: ["/assets/image2.png", "/assets/image3.png", "/assets/image4.png", "/assets/image5.png"],
     discount: "15"
   },
   {
+    id: 5,
     name: "Riverside Cabin",
     address: {
       state: "Queenstown",
@@ -180,10 +223,11 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "4-6"
     },
-    image: "/assets/image 2.png",
+    image: ["/assets/image2.png", "/assets/image3.png", "/assets/image4.png", "/assets/image5.png"],
     discount: "20"
   },
   {
+    id: 6,
     name: "Modern Beachfront Villa",
     address: {
       state: "Sidemen",
@@ -198,10 +242,11 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "4",
       occupants: "8-10"
     },
-    image: "/assets/image 2.png",
+    image: ["/assets/image2.png", "/assets/image3.png", "/assets/image4.png", "/assets/image5.png"],
     discount: ""
   },
   {
+    id: 7,
     name: "Lakeside Chalet",
     address: {
       state: "Banff",
@@ -216,10 +261,11 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-5"
     },
-    image: "/assets/image 2.png",
+    image: ["/assets/image2.png", "/assets/image3.png", "/assets/image4.png", "/assets/image5.png"],
     discount: "10"
   },
   {
+    id: 8,
     name: "Tropical Garden Villa",
     address: {
       state: "Koh Samui",
@@ -234,10 +280,11 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "5-6"
     },
-    image: "/assets/image 2.png",
+    image: ["/assets/image2.png", "/assets/image3.png", "/assets/image4.png", "/assets/image5.png"],
     discount: "25"
   },
   {
+    id: 9,
     name: "Urban Loft",
     address: {
       state: "Berlin",
@@ -252,10 +299,11 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "1",
       occupants: "2-3"
     },
-    image: "/assets/image 2.png",
+    image: ["/assets/image2.png", "/assets/image3.png", "/assets/image4.png", "/assets/image5.png"],
     discount: ""
   },
   {
+    id: 10,
     name: "Secluded Forest Cabin",
     address: {
       state: "Whistler",
@@ -270,10 +318,11 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "5-7"
     },
-    image: "/assets/image 2.png",
+    image: ["/assets/image2.png", "/assets/image3.png", "/assets/image4.png", "/assets/image5.png"],
     discount: "40"
   },
   {
+    id: 11,
     name: "Cliffside Villa",
     address: {
       state: "Amalfi",
@@ -288,10 +337,11 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "4",
       occupants: "6-8"
     },
-    image: "/assets/image 2.png",
+    image: ["/assets/image2.png", "/assets/image3.png", "/assets/image4.png", "/assets/image5.png"],
     discount: "50"
   },
   {
+    id: 12,
     name: "Coastal Escape Villa",
     address: {
       state: "Noosa",
@@ -306,10 +356,11 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-6"
     },
-    image: "/assets/image 2.png",
+    image: ["/assets/image2.png", "/assets/image3.png", "/assets/image4.png", "/assets/image5.png"],
     discount: ""
   },
   {
+    id: 13,
     name: "Historical Villa",
     address: {
       state: "Florence",
@@ -324,10 +375,11 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "2-4"
     },
-    image: "/assets/image 2.png",
+    image: ["/assets/image2.png", "/assets/image3.png", "/assets/image4.png", "/assets/image5.png"],
     discount: "35"
   },
   {
+    id: 14,
     name: "Downtown Apartment",
     address: {
       state: "Tokyo",
@@ -342,10 +394,11 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "1",
       occupants: "2"
     },
-    image: "/assets/image 2.png",
+    image: ["/assets/image2.png", "/assets/image3.png", "/assets/image4.png", "/assets/image5.png"],
     discount: ""
   },
   {
+    id: 15,
     name: "Luxury Safari Lodge",
     address: {
       state: "Serengeti",
@@ -360,10 +413,11 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "4",
       occupants: "6-8"
     },
-    image: "/assets/image 2.png",
+    image: ["/assets/image2.png", "/assets/image3.png", "/assets/image4.png", "/assets/image5.png"],
     discount: "20"
   },
   {
+    id: 16,
     name: "Countryside Cottage",
     address: {
       state: "Cotswolds",
@@ -378,10 +432,11 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "1",
       occupants: "2-4"
     },
-    image: "/assets/image 2.png",
+    image: ["/assets/image2.png", "/assets/image3.png", "/assets/image4.png", "/assets/image5.png"],
     discount: "25"
   },
   {
+    id: 17,
     name: "Riverfront Mansion",
     address: {
       state: "Paris",
@@ -396,10 +451,11 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "6-8"
     },
-    image: "/assets/image 2.png",
+    image: ["/assets/image2.png", "/assets/image3.png", "/assets/image4.png", "/assets/image5.png"],
     discount: "30"
   },
   {
+    id: 18,
     name: "Ski Chalet",
     address: {
       state: "Zermatt",
@@ -414,10 +470,11 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-5"
     },
-    image: "/assets/image 2.png",
+    image: ["/assets/image2.png", "/assets/image3.png", "/assets/image4.png", "/assets/image5.png"],
     discount: ""
   },
   {
+    id: 19,
     name: "Island Paradise Villa",
     address: {
       state: "Mahe",
@@ -432,10 +489,11 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "5",
       occupants: "8-10"
     },
-    image: "/assets/image 2.png",
+    image: ["/assets/image2.png", "/assets/image3.png", "/assets/image4.png", "/assets/image5.png"],
     discount: "60"
   },
   {
+    id: 20,
     name: "Clifftop Retreat",
     address: {
       state: "Cape Town",
@@ -450,7 +508,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-5"
     },
-    image: "/assets/image 2.png",
+    image: ["/assets/image2.png", "/assets/image3.png", "/assets/image4.png", "/assets/image5.png"],
     discount: ""
   }
 ];

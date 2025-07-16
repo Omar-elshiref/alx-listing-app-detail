@@ -108,8 +108,8 @@ const filteredArray = filterByCategory(PROPERTYLISTINGSAMPLE, selected);
 
           {/* property cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 px-2">
-         {filteredArray.map((property, idx) => (
-        <PropertyCard key={property.name + idx} property={property} />
+         {filteredArray.map((property, id) => (
+        <PropertyCard key={id} property={property} />
       ))}
       </div>
 
@@ -118,6 +118,7 @@ const filteredArray = filterByCategory(PROPERTYLISTINGSAMPLE, selected);
         <Button text="Show more" className="px-6 py-2 bg-black text-white rounded-full" />
         <p className="text-black text-xl font-semibold">Click to see more listings</p>
       </div>
+
       
     </section>
   )

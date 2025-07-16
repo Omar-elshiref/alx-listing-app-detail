@@ -2,9 +2,11 @@ export type ButtonProps = {
   text?: string; // Optional, as some buttons may not have text
   className?: string;
   onClick?: () => void;
+  icon?: string;
 };
 
 export interface PropertyProps {
+  id: string | number;
   name: string;
   address: {
     state: string;
@@ -19,9 +21,21 @@ export interface PropertyProps {
     shower: string;
     occupants: string;
   };
-  image: string;
+  image: string[];
   discount?: string; // Optional, as not all properties may have a discount
   description?: string; // Optional, as not all properties may have a description
+  placeOffer?: {
+      icon: string[],
+      text: string[]
+    }
+  reviews?: {
+    avatar: string;
+    name: string;
+    data: string;
+    years: number;
+    rating: number;
+    comment: string;
+  }[];
 }
 
 export interface PropertyType {

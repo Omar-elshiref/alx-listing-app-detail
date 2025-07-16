@@ -1,15 +1,24 @@
 import { PropertyProps } from "@/interfaces";
 import Image from "next/image";
+import { useRouter } from 'next/router';
+
 
 type Props = {
   property: PropertyProps;
 };
 
-const Card = ({ property }: Props) => (
-  <div className="p-0 rounded-2xl  w-full">
+const Card = ({ property }: Props) => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(`/property/${property.id}`); // غيّر المسار حسب هيكل مشروعك
+  };
+
+  return (
+    <div className="p-0 rounded-2xl w-full cursor-pointer" onClick={handleClick}>
     <div className="relative">
       <Image
-        src={property.image}
+        src={property.image[0]}
         alt={property.name}
         width={400}
         height={300}
@@ -100,6 +109,7 @@ const Card = ({ property }: Props) => (
       </div>
     </div>
   </div>
-);
+  );
+};
 
 export default Card;
